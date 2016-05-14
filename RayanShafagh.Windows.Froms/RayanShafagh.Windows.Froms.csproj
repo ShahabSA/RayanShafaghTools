@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7712A711-7453-42C2-B3C0-BED4AB050700}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RayanShafagh.Windows.Froms</RootNamespace>
+    <AssemblyName>RayanShafagh.Windows.Froms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RayanShafagh.Windows.Froms.ComboBoxDayOfWeek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.ComboBoxDayOfWeek.Designer.cs">
+      <DependentUpon>RayanShafagh.Windows.Froms.ComboBoxDayOfWeek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.DataTypeAttribute.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.DefaultAttribute.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.DefaultValueMode.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.DefaultValueModeAttribute.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.RequierdAttribute.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.TextBoxAlphabetic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.TextBoxAlphabetic.designer.cs">
+      <DependentUpon>RayanShafagh.Windows.Froms.TextBoxAlphabetic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.CustomMessageBox.Designer.cs">
+      <DependentUpon>RayanShafagh.Windows.Froms.CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.TextBoxNumeric.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.TextBoxNumeric.designer.cs">
+      <DependentUpon>RayanShafagh.Windows.Froms.TextBoxNumeric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.PersianCalendar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RayanShafagh.Windows.Froms.PersianCalendar.designer.cs">
+      <DependentUpon>RayanShafagh.Windows.Froms.PersianCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.NameDialogResultPack.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.PersianMessageBox.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.PersianMessageBoxIcon.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Vaidation.RangeAttribute.cs" />
+    <Compile Include="RayanShafagh.Windows.Froms.Validator.cs" />
+    <Compile Include="Res_Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res_Icons.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RayanShafagh.Windows.Froms.ComboBoxDayOfWeek.resx">
+      <DependentUpon>RayanShafagh.Windows.Froms.ComboBoxDayOfWeek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RayanShafagh.Windows.Froms.CustomMessageBox.resx">
+      <DependentUpon>RayanShafagh.Windows.Froms.CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RayanShafagh.Windows.Froms.TextBoxNumeric.resx">
+      <DependentUpon>RayanShafagh.Windows.Froms.TextBoxNumeric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RayanShafagh.Windows.Froms.PersianCalendar.resx">
+      <DependentUpon>RayanShafagh.Windows.Froms.PersianCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Res_Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Res_Icons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\commit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\err.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questions.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
