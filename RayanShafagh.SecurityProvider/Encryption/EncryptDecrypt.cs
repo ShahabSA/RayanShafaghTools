@@ -163,6 +163,23 @@ namespace RayanShafagh.SecurityProvider.Encryption
         }
 
         /// <summary>
+        /// Generates SHA1 Hash value for input string and returns Hash value as System.String
+        /// </summary>
+        /// <param name="input">A System.String which represents data to be hashed</param>
+        /// <returns>SHA1 Hash of input as System.String</returns>
+        public static string GetSHA1Hash(string input)
+        {
+            var encrypter = new System.Security.Cryptography.SHA1CryptoServiceProvider();
+            using (var sw = new StringWriter())
+            {
+                foreach (byte b in encrypter.ComputeHash(Encoding.UTF8.GetBytes(input)))
+                    sw.Write(b.ToString("x2"));
+                return sw.ToString();
+            }
+        }
+
+
+        /// <summary>
         /// Encrypts a unicode text using a key string, or returns null if process fails
         /// </summary>
         /// <param name="plainText">A System.String which represents input text to be encrypted</param>
